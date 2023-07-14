@@ -21,15 +21,23 @@ Apart from the coded buttons to keyboard keys, Razor Software is not needed so c
 Rem enable onboard mouse profiles only, disables all the baggage of Razor
 
 net stop "RzActionSvc"
+
 net stop "Razer Game Manager Service"
+
 net stop "Razer Synapse Service"
+
 taskkill /IM "Razer Synapse 3.exe" /F
+
 taskkill /IM "Razer Synapse Service Process.exe" /F
+
 taskkill /IM "Razer Synapse Service.exe" /F
+
 taskkill /IM "RazerCentralService.exe" /F
+
 taskkill /IM "GameManagerService.exe" /F
 
 rem start /min "" "C:\Program Files (x86)\Razer\Synapse3\WPFUI\Framework\Razer Synapse 3 Host\Razer Synapse 3.exe"
+
 pause
 
 
